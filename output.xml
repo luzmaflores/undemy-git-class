@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220616 14:51:33.773" rpa="false" schemaversion="2">
+<suite id="s1" name="Selenium" source="C:\Users\Teresita Romero\Desktop\Arrays y loops\selenium.robot">
+<test id="s1-t1" name="CP001 Hacer Click en Contenedores">
+<kw name="Open Homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${testUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220616 14:51:34.283" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220616 14:51:34.283" endtime="20220616 14:51:40.064"/>
+</kw>
+<status status="PASS" starttime="20220616 14:51:34.282" endtime="20220616 14:51:40.064"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>@{nombresDeContenedores}</arg>
+<arg>//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[3]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[4]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[5]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[6]/div/div[2]/h5/a</arg>
+<arg>//*[@id="homefeatured"]/li[7]/div/div[2]/h5/a</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220616 14:51:40.066" level="INFO">@{nombresDeContenedores} = [ //*[@id="homefeatured"]/li[1]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[2]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[3]/div/div[2]/h5/a | //*[@id="homefeatured"]/li[4]/div/div[2]/h5/a | //*[@i...</msg>
+<status status="PASS" starttime="20220616 14:51:40.065" endtime="20220616 14:51:40.066"/>
+</kw>
+<for flavor="IN">
+<var>${nombreDeContenedor}</var>
+<value>@{nombresDeContenedores}</value>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:51:40.067" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[1]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:51:40.066" endtime="20220616 14:51:49.197"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:51:49.197" endtime="20220616 14:51:49.220"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:51:49.220" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:51:49.220" endtime="20220616 14:51:57.814"/>
+</kw>
+<status status="PASS" starttime="20220616 14:51:40.066" endtime="20220616 14:51:57.814"/>
+</iter>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:51:57.814" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:51:57.814" endtime="20220616 14:52:01.232"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:52:01.232" endtime="20220616 14:52:01.255"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:01.255" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:52:01.255" endtime="20220616 14:52:07.098"/>
+</kw>
+<status status="PASS" starttime="20220616 14:51:57.814" endtime="20220616 14:52:07.098"/>
+</iter>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[3]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:07.099" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[3]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:52:07.099" endtime="20220616 14:52:10.202"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:52:10.202" endtime="20220616 14:52:10.219"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:10.219" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:52:10.219" endtime="20220616 14:52:12.104"/>
+</kw>
+<status status="PASS" starttime="20220616 14:52:07.098" endtime="20220616 14:52:12.104"/>
+</iter>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[4]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:12.104" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[4]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:52:12.104" endtime="20220616 14:52:13.963"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:52:13.963" endtime="20220616 14:52:13.984"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:13.984" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:52:13.984" endtime="20220616 14:52:15.262"/>
+</kw>
+<status status="PASS" starttime="20220616 14:52:12.104" endtime="20220616 14:52:15.263"/>
+</iter>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[5]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:15.263" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[5]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:52:15.263" endtime="20220616 14:52:16.215"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:52:16.215" endtime="20220616 14:52:16.236"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:16.236" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:52:16.236" endtime="20220616 14:52:18.990"/>
+</kw>
+<status status="PASS" starttime="20220616 14:52:15.263" endtime="20220616 14:52:18.990"/>
+</iter>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[6]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:18.991" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[6]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:52:18.990" endtime="20220616 14:52:21.997"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:52:21.997" endtime="20220616 14:52:22.014"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:22.014" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:52:22.014" endtime="20220616 14:52:24.299"/>
+</kw>
+<status status="PASS" starttime="20220616 14:52:18.990" endtime="20220616 14:52:24.299"/>
+</iter>
+<iter>
+<var name="${nombreDeContenedor}">//*[@id="homefeatured"]/li[7]/div/div[2]/h5/a</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${nombreDeContenedor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:24.300" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[7]/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220616 14:52:24.299" endtime="20220616 14:52:25.761"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="bigpic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 14:52:25.761" endtime="20220616 14:52:25.776"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 14:52:25.777" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20220616 14:52:25.776" endtime="20220616 14:52:28.492"/>
+</kw>
+<status status="PASS" starttime="20220616 14:52:24.299" endtime="20220616 14:52:28.492"/>
+</iter>
+<status status="PASS" starttime="20220616 14:51:40.066" endtime="20220616 14:52:28.492"/>
+</for>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220616 14:52:28.493" endtime="20220616 14:52:30.589"/>
+</kw>
+<status status="PASS" starttime="20220616 14:51:34.282" endtime="20220616 14:52:30.590"/>
+</test>
+<status status="PASS" starttime="20220616 14:51:33.775" endtime="20220616 14:52:30.592"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Selenium">Selenium</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
