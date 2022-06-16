@@ -22,3 +22,6 @@ CP001 Hacer Click en Contenedores
 	Click Element 	xpath=//*[@id="header_logo"]/a/img
 	END
 	Close Browser 
+
+CP002 Caso de Prueba Nuevo
+	Open Homepages
