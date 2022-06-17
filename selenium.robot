@@ -24,4 +24,4 @@ CP001 Hacer Click en Contenedores
 	Close Browser 
 
 CP002 Caso de Prueba Nuevo
-	Open Homepages
+	Open Homepage
